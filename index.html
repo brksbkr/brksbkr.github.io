@@ -7,15 +7,26 @@
       text-align: center;
       font-family: Arial, sans-serif;
       margin-top: 100px;
+      background-color: #111;
+      color: #eee;
     }
 
     a {
       text-decoration: none;
-      color: #19b51f;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Project links */
+    .project-link {
+      color: #22c55e;
+    }
+
+    /* Social links */
+    .social-link {
+      color: #345beb;
     }
 
     ul {
@@ -24,10 +35,10 @@
     }
 
     hr {
-      width: 50%;
-      margin: 20px auto;
+      width: 75%;
+      margin: 30px auto;
       border: 0;
-      border-top: 1px solid #fc8803;
+      border-top: 1.5px solid #271282;
     }
   </style>
 </head>
@@ -41,16 +52,28 @@
 
   <h3>Projects</h3>
   <ul>
-    <a href="https://github.com/brksbkr/groundnotes" target="_blank">GroundNotes</a>
-    <li>Typer</li>
-    <li>dist-rs</li>
+    <li>
+      <a class="project-link" href="https://github.com/brksbkr/groundnotes" target="_blank">
+        GroundNotes
+      </a>
+    </li>
+    <li>
+      <a class="project-link" href="#" target="_blank">
+        Typer
+      </a>
+    </li>
+    <li>
+      <a class="project-link" href="#" target="_blank">
+        dist-rs
+      </a>
+    </li>
   </ul>
 
   <hr>
 
   <p>
-    <a href="https://github.com/brksbkr" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/brooks-booker/" target="_blank">LinkedIn</a>
+    <a class="social-link" href="https://github.com/brksbkr" target="_blank">GitHub</a> |
+    <a class="social-link" href="https://www.linkedin.com/in/brooks-booker/" target="_blank">LinkedIn</a>
   </p>
 
 </body>
