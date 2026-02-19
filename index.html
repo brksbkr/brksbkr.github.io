@@ -78,15 +78,21 @@
 .footer-logo img {
   width: 80px;
   opacity: 0.9;
-  animation: glowPulse 4s ease-in-out infinite;
+  animation: glowPulse 6s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
   0% {
     filter: drop-shadow(0 0 6px #5fa8ff);
+    }
+  50% {
+    filter: drop-shadow(0 0 12px #5fa8ff);
+  }
+  65% {
+    filter: drop-shadow(0 0 16px #5fa8ff);
   }
   50% {
-    filter: drop-shadow(0 0 16px #5fa8ff);
+    filter: drop-shadow(0 0 12px #5fa8ff);
   }
   100% {
     filter: drop-shadow(0 0 6px #5fa8ff);
