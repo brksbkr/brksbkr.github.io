@@ -70,24 +70,25 @@
       h3 { font-size: 1rem; }
     }
 
-    .footer-logo {
-  margin-top: 60px;
-  padding-bottom: 40px;
-}
-
 .footer-logo img{
   width: 80px;
   opacity: 0.9;
-  animation: glowPulse 8s linear infinite;
+  animation: glowPulse 8s infinite;
 }
 
 @keyframes glowPulse{
-  0%   { filter: drop-shadow(0 0 8px  #5fa8ff); }
-  60%  { filter: drop-shadow(0 0 12px #5fa8ff); }
-  85%  { filter: drop-shadow(0 0 12px #5fa8ff); } /* hold */
-  100% { filter: drop-shadow(0 0 8px  #5fa8ff); }
+  0%{
+    filter: drop-shadow(0 0 8px #5fa8ff);
+    animation-timing-function: ease-in;
+  }
+  70%{
+    filter: drop-shadow(0 0 16px #5fa8ff);
+    animation-timing-function: ease-out; /* slows the return */
+  }
+  100%{
+    filter: drop-shadow(0 0 8px #5fa8ff);
+  }
 }
-
 
   </style>
 </head>
