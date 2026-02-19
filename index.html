@@ -75,20 +75,19 @@
   padding-bottom: 40px;
 }
 
-.footer-logo img {
+.footer-logo img{
   width: 80px;
   opacity: 0.9;
-  animation: glowPulse 6s ease-in-out infinite;
+  animation: glowPulse 8s linear infinite;
 }
 
-@keyframes glowPulse {
-  from {
-    filter: drop-shadow(0 0 10px #5fa8ff);
-  }
-  to {
-    filter: drop-shadow(0 0 13px #5fa8ff);
-  }
+@keyframes glowPulse{
+  0%   { filter: drop-shadow(0 0 8px  #5fa8ff); }
+  60%  { filter: drop-shadow(0 0 12px #5fa8ff); }
+  85%  { filter: drop-shadow(0 0 12px #5fa8ff); } /* hold */
+  100% { filter: drop-shadow(0 0 8px  #5fa8ff); }
 }
+
 
   </style>
 </head>
