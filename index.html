@@ -22,7 +22,15 @@
       padding-top: 100px;
     }
 
-    h1 { font-size: 2.8rem; }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
 
     a {
       text-decoration: none;
@@ -36,18 +44,28 @@
       color: #ffffff;
     }
 
+    .resume-link {
+      color: #F96435;
+    }
+
     .bio-header {
       font-size: 1.4rem;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .bio-container {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     .bio-text {
       font-size: 0.95rem;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
     .bio-label {
-      color: #5fa8ff;
+      color: #F96435;
     }
 
     hr {
@@ -57,8 +75,8 @@
       border: none;
       background: linear-gradient(
         to right,
-        #28477d 0%,
-        #28477d 70%,
+        #932C00 0%,
+        #932C00 70%,
         #ffffff 100%
       );
     }
@@ -66,6 +84,7 @@
     @media (max-width: 600px) {
       body { padding-top: 60px; }
       h1 { font-size: 2.2rem; }
+      .bio-container { padding: 0 20px; }
     }
 
     .footer-logo img{
@@ -76,13 +95,13 @@
 
     @keyframes glowPulse{
       0%{
-        filter: drop-shadow(0 0 8px #5fa8ff);
+        filter: drop-shadow(0 0 8px #F96435);
       }
       70%{
-        filter: drop-shadow(0 0 12px #5fa8ff);
+        filter: drop-shadow(0 0 14px #F96435);
       }
       100%{
-        filter: drop-shadow(0 0 8px #5fa8ff);
+        filter: drop-shadow(0 0 8px #F96435);
       }
     }
   </style>
@@ -91,25 +110,27 @@
 <body>
 
   <h1>Brooks Booker</h1>
-  <p>GIS • Dev</p>
+  <p class="subtitle">GIS • Dev</p>
 
   <hr>
 
   <h4 class="bio-header">Bio</h4>
 
-  <p class="bio-text">
-    <span class="bio-label">location:</span> oklahoma<br>
-    <span class="bio-label">role:</span> gis specialist<br>
-    <span class="bio-label">education:</span> nsu - b.a. geography (2023), ou - m.s. applied computing (august 2026)<br>
-    <span class="bio-label">skills:</span> python, sql, javascript, arcgis pro, arcgis online, arcgis enterprise/server, rest services, qgis, git<br>
-    <span class="bio-label">interests:</span> gis system design, automation, ci/cd, building practical tools, api development, system integration, computer networking, linux
-  </p>
+  <div class="bio-container">
+    <p class="bio-text">
+      <span class="bio-label">location:</span> oklahoma<br>
+      <span class="bio-label">role:</span> gis specialist<br>
+      <span class="bio-label">education:</span> nsu - b.a. geography (2023), ou - m.s. applied computing (august 2026)<br>
+      <span class="bio-label">skills:</span> python, sql, javascript, arcgis pro, arcgis online, arcgis enterprise/server, rest services, qgis, git<br>
+      <span class="bio-label">interests:</span> gis system design, automation, ci/cd, building practical tools, api development, system integration, computer networking, linux
+    </p>
+  </div>
 
   <p>
-    <a class="social-link"
+    <a class="resume-link"
        href="resume_2026.pdf"
        target="_blank"
-       rel="noopener noreferrer">resume</a>
+       rel="noopener noreferrer">Resume</a>
   </p>
 
   <hr>
