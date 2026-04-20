@@ -33,21 +33,18 @@
       text-decoration: underline;
     }
 
-    .project-link {
-      color: #5fa8ff;
-    }
-
     .social-link {
       color: #ffffff;
     }
 
-    ul {
-      list-style: square;
-      padding: 0;
+    .bio-header {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
     }
 
-    li {
-      margin: 10px 0;
+    .bio-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     hr {
@@ -70,27 +67,25 @@
       h3 { font-size: 1rem; }
     }
 
+    .footer-logo img{
+      width: 35px;
+      opacity: 0.9;
+      animation: glowPulse 8s infinite;
+    }
 
-.footer-logo img{
-  width: 35px;
-  opacity: 0.9;
-  animation: glowPulse 8s infinite;
-}
-
-@keyframes glowPulse{
-  0%{
-    filter: drop-shadow(0 0 8px #5fa8ff);
-    animation-timing-function: ease-in;
-  }
-  70%{
-    filter: drop-shadow(0 0 12px #5fa8ff);
-    animation-timing-function: ease-out; 
-  }
-  100%{
-    filter: drop-shadow(0 0 8px #5fa8ff);
-  }
-}
-
+    @keyframes glowPulse{
+      0%{
+        filter: drop-shadow(0 0 8px #5fa8ff);
+        animation-timing-function: ease-in;
+      }
+      70%{
+        filter: drop-shadow(0 0 12px #5fa8ff);
+        animation-timing-function: ease-out; 
+      }
+      100%{
+        filter: drop-shadow(0 0 8px #5fa8ff);
+      }
+    }
   </style>
 </head>
 
@@ -101,17 +96,22 @@
 
   <hr>
 
-  <h4>Projects</h4>
-  <ul>
-    <li>
-      <a class="project-link"
-         href="https://github.com/brksbkr/dist-rs"
-         target="_blank"
-         rel="noopener noreferrer">
-        dist-rs
-      </a>
-    </li>
-  </ul>
+  <h4 class="bio-header">bio:</h4>
+
+  <p class="bio-text">
+    location: oklahoma<br>
+    role: gis specialist<br>
+    education: nsu - b.a. geography (2023), ou - m.s. applied computing (august 2026)<br>
+    skills: python, sql, javascript, arcgis pro, arcgis online, arcgis server, qgis, git<br>
+    interests: gis system design, automation, ci/cd, building practical tools, computer networking, linux
+  </p>
+
+  <p>
+    <a class="social-link"
+       href="resume_2026.pdf"
+       target="_blank"
+       rel="noopener noreferrer">resume</a>
+  </p>
 
   <hr>
 
@@ -127,7 +127,8 @@
     <a class="social-link"
        href="mailto:brksbkr@proton.me">Email</a>
   </p>
-    <div class="footer-logo">
+
+  <div class="footer-logo">
     <img src="rocket.png" alt="Logo">
   </div>
 
