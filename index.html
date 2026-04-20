@@ -23,7 +23,6 @@
     }
 
     h1 { font-size: 2.8rem; }
-    h2 { font-size: 1.6rem; color: #ffffff; }
 
     a {
       text-decoration: none;
@@ -47,6 +46,10 @@
       line-height: 1.6;
     }
 
+    .bio-label {
+      color: #5fa8ff;
+    }
+
     hr {
       width: 75%;
       height: 2px;
@@ -63,8 +66,6 @@
     @media (max-width: 600px) {
       body { padding-top: 60px; }
       h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.3rem; }
-      h3 { font-size: 1rem; }
     }
 
     .footer-logo img{
@@ -76,11 +77,9 @@
     @keyframes glowPulse{
       0%{
         filter: drop-shadow(0 0 8px #5fa8ff);
-        animation-timing-function: ease-in;
       }
       70%{
         filter: drop-shadow(0 0 12px #5fa8ff);
-        animation-timing-function: ease-out; 
       }
       100%{
         filter: drop-shadow(0 0 8px #5fa8ff);
@@ -96,14 +95,14 @@
 
   <hr>
 
-  <h4 class="bio-header">bio:</h4>
+  <h4 class="bio-header">Bio</h4>
 
   <p class="bio-text">
-    location: oklahoma<br>
-    role: gis specialist<br>
-    education: nsu - b.a. geography (2023), ou - m.s. applied computing (august 2026)<br>
-    skills: python, sql, javascript, arcgis pro, arcgis online, arcgis server, qgis, git<br>
-    interests: gis system design, automation, ci/cd, building practical tools, computer networking, linux
+    <span class="bio-label">location:</span> oklahoma<br>
+    <span class="bio-label">role:</span> gis specialist<br>
+    <span class="bio-label">education:</span> nsu - b.a. geography (2023), ou - m.s. applied computing (august 2026)<br>
+    <span class="bio-label">skills:</span> python, sql, javascript, arcgis pro, arcgis online, arcgis enterprise/server, rest services, qgis, git<br>
+    <span class="bio-label">interests:</span> gis system design, automation, ci/cd, building practical tools, api development, system integration, computer networking, linux
   </p>
 
   <p>
